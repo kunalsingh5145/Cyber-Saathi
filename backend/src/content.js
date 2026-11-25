@@ -1,0 +1,27 @@
+// Starter content shown until an admin publishes their own.
+export const starterTopics = [
+  { title: "Spot a phishing message", category: "Scams", icon: "mail", summary: "Learn to recognize messages designed to steal your details.", content: "Pause before you tap. Check the sender carefully, look for unexpected urgency, spelling mistakes, unusual requests and links that do not match the claimed organization. Never share passwords, PINs or OTPs through a message or call." },
+  { title: "Protect your UPI payments", category: "Payments", icon: "wallet", summary: "Understand collect requests, QR-code tricks and payment fraud.", content: "You do not enter a UPI PIN to receive money. Approve only payment requests you understand. Verify the receiver name and amount before paying. Never scan a QR code or enter your PIN just because someone says it will help you receive a refund." },
+  { title: "Keep your passwords strong", category: "Account safety", icon: "lock", summary: "Create unique passwords and secure important accounts.", content: "Use a long, unique password or passphrase for every important account. A password manager can help. Turn on multi-factor authentication wherever possible. Never share a password or OTP, even with someone claiming to be support staff." },
+  { title: "Avoid fake websites", category: "Browsing", icon: "globe", summary: "Check website addresses before entering personal information.", content: "Look carefully at the full domain name. Scammers may use misspellings, extra words or unusual domain endings. HTTPS encrypts the connection but does not prove that a website is genuine. Reach services through their official app or a saved trusted address." },
+  { title: "Secure your social media", category: "Privacy", icon: "users", summary: "Reduce account takeover and impersonation risks.", content: "Use a unique password and two-step verification. Review privacy settings and active sessions. Be cautious with unexpected links, investment tips, urgent requests for money and accounts that imitate people you know. Confirm unusual requests through another channel." },
+  { title: "Recognize identity theft", category: "Personal data", icon: "fingerprint", summary: "Protect identity documents and personal information.", content: "Share identity documents only when necessary and with trusted services. Avoid posting sensitive details publicly. Be alert to unexpected account alerts, loan messages or SIM changes. Contact the relevant provider promptly if your identity information may be misused." }
+];
+
+export const starterScams = [
+  { title: "Your bank account will be blocked", channel: "SMS / WhatsApp", example: "URGENT: Your bank account will be blocked today. Click this link and update your KYC immediately.", warningSigns: ["Creates panic with a deadline", "Uses an unfamiliar link", "Requests sensitive banking details"], safeAction: "Do not open the link. Contact your bank using the number on its official website, card or app." },
+  { title: "You have won a prize", channel: "Call / Message", example: "Congratulations! You have won a large cash prize. Pay a small processing fee to claim it.", warningSigns: ["Unexpected prize you did not enter for", "Asks for an advance payment", "Pressures you to act quickly"], safeAction: "Do not pay or share personal details. Block and report the sender." },
+  { title: "Remote access for a refund", channel: "Phone call", example: "I am calling from customer support. Install this screen-sharing app so I can process your refund.", warningSigns: ["Unsolicited support call", "Requests remote access to your device", "May expose banking apps and messages"], safeAction: "End the call. Contact the company through its official app or website. Never give remote access to an unknown caller." }
+];
+
+export const starterQuiz = {
+  title: "Everyday Cyber Safety",
+  description: "A short check of practical online-safety habits.",
+  questions: [
+    { question: "Someone asks for your UPI PIN to send you money. What should you do?", options: ["Share it to receive the money", "Do not share it; a PIN is used to authorize payments", "Send your OTP instead"], answerIndex: 1, explanation: "A UPI PIN authorizes a payment. You do not need it to receive money." },
+    { question: "A message says your account will close in 10 minutes and includes a link. What is safest?", options: ["Click quickly", "Forward it to friends", "Verify through the official app or website"], answerIndex: 2, explanation: "Urgency and unexpected links are common warning signs. Verify independently." },
+    { question: "Does the HTTPS padlock guarantee a website is genuine?", options: ["Yes, always", "No, it only indicates an encrypted connection", "Only on mobile"], answerIndex: 1, explanation: "Scam websites can also use HTTPS. Check the domain and reach services through trusted routes." },
+    { question: "What should you do with an OTP?", options: ["Share it with customer care", "Post it only in private groups", "Keep it secret and never share it"], answerIndex: 2, explanation: "A genuine service will not ask you to disclose your OTP over a call or message." },
+    { question: "You think money has been stolen through a cyber fraud in India. What should you do promptly?", options: ["Wait a few days", "Call 1930 and report at cybercrime.gov.in", "Delete all messages"], answerIndex: 1, explanation: "Report financial cyber fraud promptly through helpline 1930 and the National Cyber Crime Reporting Portal." }
+  ]
+};
